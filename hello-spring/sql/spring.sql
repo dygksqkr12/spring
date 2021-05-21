@@ -54,4 +54,13 @@ select
     *
 from
     member;
+    
+update
+    member
+set
+    password = '$2a$10$A63nIuN6nQDj25YHRmk/Pe1Rx4u7fIFI/pm/qkBqeA5hrb5thIkaC'
+where
+    id = 'qwerty';
+
+commit;
 		

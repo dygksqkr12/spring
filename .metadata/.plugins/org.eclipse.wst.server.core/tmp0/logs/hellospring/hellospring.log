@@ -1,0 +1,687 @@
+INFO :[2021-05-21 18:13:56,203] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 18:13:57,841] ContextLoader.java:306 - Root WebApplicationContext initialized in 1635 ms
+INFO :[2021-05-21 18:13:57,906] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 18:13:59,002] FrameworkServlet.java:546 - Completed initialization in 1096 ms
+INFO :[2021-05-21 18:15:30,447] HomeController.java:25 - index 페이지 요청!
+INFO :[2021-05-21 18:15:33,729] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 18:15:33,755] MemberController.java:139 - referer = http://localhost:9090/spring/
+INFO :[2021-05-21 18:15:34,859] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 18:15:35,342] MemberController.java:154 - member = Member(id=honggd, password=$2a$10$6ljI1ESFfgYWhxq0ywy6n.LzpWtpRkwy2Gf4UEe2/aJoEBACGMoUC, name=홍길동, gender=M, birthday=1994-07-20, email=honggd@naver.com, phone=01012341234, address=서울 강남, hobby=[운동, 등산, 여행], enrollDate=2021-05-20, enabled=true)
+INFO :[2021-05-21 18:15:35,420] HomeController.java:25 - index 페이지 요청!
+INFO :[2021-05-21 19:21:30,162] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:21:31,700] ContextLoader.java:306 - Root WebApplicationContext initialized in 1535 ms
+INFO :[2021-05-21 19:21:31,773] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+WARN :[2021-05-21 19:21:32,774] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+ERROR:[2021-05-21 19:21:32,774] FrameworkServlet.java:533 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:701)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:715)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:529)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:983)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4902)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5211)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:124)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1234)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:318)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:293)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:124)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:77)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:78)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 49 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 73 more
+Caused by: java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1364)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1457)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1384)
+	... 75 more
+INFO :[2021-05-21 19:21:36,135] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+WARN :[2021-05-21 19:21:36,494] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+ERROR:[2021-05-21 19:21:36,494] FrameworkServlet.java:533 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:701)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:715)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:529)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:124)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1234)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:318)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:293)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:124)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:77)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:78)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 35 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 59 more
+Caused by: java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1364)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1457)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1384)
+	... 61 more
+INFO :[2021-05-21 19:21:37,963] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+WARN :[2021-05-21 19:21:38,256] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+ERROR:[2021-05-21 19:21:38,256] FrameworkServlet.java:533 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:701)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:715)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:529)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#2': Cannot create inner bean 'loggerInterceptor' of type [com.kh.spring.common.interceptor.loggerInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:124)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1234)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:318)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:293)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:124)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:77)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:78)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 35 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.loggerInterceptor] for bean with name 'loggerInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 59 more
+Caused by: java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.loggerInterceptor
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1364)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1457)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1384)
+	... 61 more
+INFO :[2021-05-21 19:22:46,166] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:22:47,673] ContextLoader.java:306 - Root WebApplicationContext initialized in 1504 ms
+INFO :[2021-05-21 19:22:47,752] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:22:48,950] FrameworkServlet.java:546 - Completed initialization in 1197 ms
+DEBUG:[2021-05-21 19:22:49,111] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:22:49,112] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:22:49,112] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:22:49,123] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:22:49,135] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:22:49,137] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:22:49,229] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:22:49,229] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 19:31:25,018] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:31:25,019] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:31:25,019] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:31:25,019] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:31:25,020] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:31:25,020] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:31:25,882] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:31:25,882] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 19:32:13,730] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:32:15,163] ContextLoader.java:306 - Root WebApplicationContext initialized in 1430 ms
+INFO :[2021-05-21 19:32:15,255] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:32:16,458] FrameworkServlet.java:546 - Completed initialization in 1202 ms
+DEBUG:[2021-05-21 19:32:20,364] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:32:20,364] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:32:20,364] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:32:20,374] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:32:20,385] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:32:20,387] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:32:20,475] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:32:20,475] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 19:35:58,752] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:36:00,156] ContextLoader.java:306 - Root WebApplicationContext initialized in 1400 ms
+INFO :[2021-05-21 19:36:00,238] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:36:01,415] FrameworkServlet.java:546 - Completed initialization in 1177 ms
+DEBUG:[2021-05-21 19:36:03,471] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:36:03,471] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:36:03,471] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:36:03,481] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:36:03,493] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:36:03,495] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:36:03,573] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:36:03,573] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 19:36:18,748] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:36:20,174] ContextLoader.java:306 - Root WebApplicationContext initialized in 1423 ms
+INFO :[2021-05-21 19:36:20,258] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:36:21,478] FrameworkServlet.java:546 - Completed initialization in 1220 ms
+DEBUG:[2021-05-21 19:36:23,652] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:36:23,652] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:36:23,652] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:36:23,663] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:36:23,674] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:36:23,677] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:36:23,756] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:36:23,756] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 19:36:50,094] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:36:51,541] ContextLoader.java:306 - Root WebApplicationContext initialized in 1444 ms
+INFO :[2021-05-21 19:36:51,622] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:36:52,789] FrameworkServlet.java:546 - Completed initialization in 1166 ms
+INFO :[2021-05-21 19:50:28,493] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 19:50:30,117] ContextLoader.java:306 - Root WebApplicationContext initialized in 1621 ms
+INFO :[2021-05-21 19:50:30,196] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+WARN :[2021-05-21 19:50:31,150] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+ERROR:[2021-05-21 19:50:31,152] FrameworkServlet.java:533 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:701)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:715)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:529)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:983)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4902)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5211)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1427)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:124)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1234)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:318)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:293)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:124)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:77)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:78)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 49 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 73 more
+Caused by: java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1364)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1457)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1384)
+	... 75 more
+INFO :[2021-05-21 19:50:32,489] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+WARN :[2021-05-21 19:50:32,918] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+ERROR:[2021-05-21 19:50:32,918] FrameworkServlet.java:533 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:701)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:667)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:715)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:529)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:169)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1134)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1089)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:761)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.handler.MappedInterceptor#3': Cannot create inner bean 'loginInterceptor' of type [com.kh.spring.common.interceptor.LoginInterceptor] while setting constructor argument; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:124)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1234)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:340)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.detectMappedInterceptors(AbstractHandlerMapping.java:318)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.initApplicationContext(AbstractHandlerMapping.java:293)
+	at org.springframework.context.support.ApplicationObjectSupport.initApplicationContext(ApplicationObjectSupport.java:124)
+	at org.springframework.web.context.support.WebApplicationObjectSupport.initApplicationContext(WebApplicationObjectSupport.java:77)
+	at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:78)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1754)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	... 35 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.kh.spring.common.interceptor.LoginInterceptor] for bean with name 'loginInterceptor' defined in ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]; nested exception is java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:487)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 59 more
+Caused by: java.lang.ClassNotFoundException: com.kh.spring.common.interceptor.LoginInterceptor
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1364)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1187)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:437)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1457)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1384)
+	... 61 more
+INFO :[2021-05-21 19:51:08,576] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 19:51:09,394] FrameworkServlet.java:546 - Completed initialization in 818 ms
+DEBUG:[2021-05-21 19:51:09,418] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 19:51:09,418] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 19:51:09,418] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 19:51:09,429] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 19:51:09,440] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 19:51:09,443] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 19:51:09,533] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 19:51:09,533] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 20:07:36,716] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 20:07:38,133] ContextLoader.java:306 - Root WebApplicationContext initialized in 1414 ms
+INFO :[2021-05-21 20:07:38,215] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 20:07:39,462] FrameworkServlet.java:546 - Completed initialization in 1247 ms
+DEBUG:[2021-05-21 20:07:45,370] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:07:45,370] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:07:45,370] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:07:45,381] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:07:45,392] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:07:45,394] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 20:07:45,470] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:07:45,470] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:07:56,810] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:07:56,811] LoggerInterceptor.java:21 - /spring/member/memberLogin.do
+DEBUG:[2021-05-21 20:07:56,811] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:07:56,817] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:07:56,837] MemberController.java:139 - referer = null
+DEBUG:[2021-05-21 20:07:56,837] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:07:56,838] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberLogin"; model={common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}}]
+DEBUG:[2021-05-21 20:07:56,853] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:07:56,853] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:08:01,658] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:08:01,658] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:08:01,659] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:08:01,659] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:08:01,659] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:08:01,659] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 20:08:01,665] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:08:01,665] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:08:25,291] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:08:25,291] LoggerInterceptor.java:21 - /spring/member/memberDetail.do
+DEBUG:[2021-05-21 20:08:25,292] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-05-21 20:08:25,293] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:08:25,293] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:08:25,321] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:08:25,322] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:08:25,322] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:08:25,322] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:08:25,323] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:08:25,323] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={msg=로그인 후 사용하실 수 있습니다.}]
+DEBUG:[2021-05-21 20:08:25,328] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:08:25,328] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:09:58,486] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:09:58,487] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:09:58,487] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:09:58,487] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:09:58,487] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:09:58,487] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 20:09:58,493] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:09:58,493] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:10:01,196] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:10:01,196] LoggerInterceptor.java:21 - /spring/member/memberEnroll.do
+DEBUG:[2021-05-21 20:10:01,196] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-05-21 20:10:01,196] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:10:01,197] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:10:01,201] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:10:01,201] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:10:01,201] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:10:01,202] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:10:01,202] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:10:01,202] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={msg=로그인 후 사용하실 수 있습니다.}]
+DEBUG:[2021-05-21 20:10:01,203] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:10:01,203] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 20:11:19,252] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 20:11:20,680] ContextLoader.java:306 - Root WebApplicationContext initialized in 1425 ms
+INFO :[2021-05-21 20:11:20,760] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 20:11:22,110] FrameworkServlet.java:546 - Completed initialization in 1350 ms
+DEBUG:[2021-05-21 20:11:22,191] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:11:22,191] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:11:22,192] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:11:22,202] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:11:22,213] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:11:22,215] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 20:11:22,290] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:11:22,290] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:11:24,417] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:11:24,417] LoggerInterceptor.java:21 - /spring/member/memberEnroll.do
+DEBUG:[2021-05-21 20:11:24,417] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:11:24,421] MemberController.java:86 - @ModelAttribute("common")
+DEBUG:[2021-05-21 20:11:24,422] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:11:24,422] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberEnroll"; model={common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}}]
+DEBUG:[2021-05-21 20:11:24,470] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:11:24,470] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:11:24,493] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:11:24,493] LoggerInterceptor.java:21 - /spring/resources/css/member.css
+DEBUG:[2021-05-21 20:11:24,493] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-05-21 20:11:24,501] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:11:24,501] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-05-21 20:11:24,502] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:11:24,502] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-05-21 20:23:18,345] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-05-21 20:23:19,821] ContextLoader.java:306 - Root WebApplicationContext initialized in 1473 ms
+INFO :[2021-05-21 20:23:19,907] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-05-21 20:23:21,161] FrameworkServlet.java:546 - Completed initialization in 1254 ms
+DEBUG:[2021-05-21 20:23:21,242] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:23:21,242] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-05-21 20:23:21,242] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:23:21,252] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-05-21 20:23:21,263] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:23:21,265] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-05-21 20:23:21,350] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:23:21,350] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:23:56,419] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:23:56,419] LoggerInterceptor.java:21 - /spring/member/memberEnroll.do
+DEBUG:[2021-05-21 20:23:56,419] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:23:56,425] MemberController.java:86 - @ModelAttribute("common")
+DEBUG:[2021-05-21 20:23:56,426] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:23:56,426] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberEnroll"; model={common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}}]
+DEBUG:[2021-05-21 20:23:56,441] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:23:56,441] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:24:05,783] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:24:05,783] LoggerInterceptor.java:21 - /spring/member/memberDetail.do
+DEBUG:[2021-05-21 20:24:05,783] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-05-21 20:24:05,784] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:24:05,784] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:24:05,808] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:24:05,808] LoggerInterceptor.java:21 - /spring/member/memberLogin.do
+DEBUG:[2021-05-21 20:24:05,809] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:24:05,809] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:24:05,831] MemberController.java:139 - referer = null
+DEBUG:[2021-05-21 20:24:05,831] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:24:05,831] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberLogin"; model={msg=로그인 후 사용하실 수 있습니다., common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}}]
+DEBUG:[2021-05-21 20:24:06,644] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:24:06,644] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:29:50,059] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:29:50,059] LoggerInterceptor.java:21 - /spring/member/memberLogin.do
+DEBUG:[2021-05-21 20:29:50,059] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:29:50,060] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:29:50,061] MemberController.java:139 - referer = null
+DEBUG:[2021-05-21 20:29:50,061] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:29:50,061] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberLogin"; model={common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}}]
+DEBUG:[2021-05-21 20:29:50,065] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:29:50,065] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:29:57,056] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:29:57,056] LoggerInterceptor.java:21 - /spring/member/memberDetail.do
+DEBUG:[2021-05-21 20:29:57,056] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-05-21 20:29:57,057] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:29:57,057] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:29:57,060] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:29:57,061] LoggerInterceptor.java:21 - /spring/member/memberLogin.do
+DEBUG:[2021-05-21 20:29:57,061] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:29:57,061] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:29:57,062] MemberController.java:139 - referer = null
+DEBUG:[2021-05-21 20:29:57,073] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:29:57,073] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberLogin"; model={msg=로그인 후 사용하실 수 있습니다., next=http://localhost:9090/spring/member/memberDetail.do, common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021-05-21 20:29:57,075] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:29:57,075] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:31:31,961] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:31:31,962] LoggerInterceptor.java:21 - /spring/member/memberLogin.do
+DEBUG:[2021-05-21 20:31:31,962] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:31:31,974] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:31:32,454] MemberController.java:154 - member = Member(id=honggd, password=$2a$10$6ljI1ESFfgYWhxq0ywy6n.LzpWtpRkwy2Gf4UEe2/aJoEBACGMoUC, name=홍길동, gender=M, birthday=1994-07-20, email=honggd@naver.com, phone=01012341234, address=서울 강남, hobby=[운동, 등산, 여행], enrollDate=2021-05-20, enabled=true)
+DEBUG:[2021-05-21 20:31:32,540] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:31:32,778] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="redirect:http://localhost:9090/spring/member/memberDetail.do"; model={}]
+DEBUG:[2021-05-21 20:31:32,783] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:31:32,783] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-05-21 20:31:32,786] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-05-21 20:31:32,786] LoggerInterceptor.java:21 - /spring/member/memberDetail.do
+DEBUG:[2021-05-21 20:31:32,786] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-05-21 20:31:32,787] MemberController.java:86 - @ModelAttribute("common")
+INFO :[2021-05-21 20:31:32,790] MemberController.java:194 - loginMember = Member(id=honggd, password=$2a$10$6ljI1ESFfgYWhxq0ywy6n.LzpWtpRkwy2Gf4UEe2/aJoEBACGMoUC, name=홍길동, gender=M, birthday=1994-07-20, email=honggd@naver.com, phone=01012341234, address=서울 강남, hobby=[운동, 등산, 여행], enrollDate=2021-05-20, enabled=true)
+DEBUG:[2021-05-21 20:31:32,791] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-05-21 20:31:32,791] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="member/memberDetail"; model={next=http://localhost:9090/spring/member/memberDetail.do, loginMember=Member(id=honggd, password=$2a$10$6ljI1ESFfgYWhxq0ywy6n.LzpWtpRkwy2Gf4UEe2/aJoEBACGMoUC, name=홍길동, gender=M, birthday=1994-07-20, email=honggd@naver.com, phone=01012341234, address=서울 강남, hobby=[운동, 등산, 여행], enrollDate=2021-05-20, enabled=true), common={adminPhone=070-1234-5678, adminEmail=admin@kh.or.kr}, modelAndView=ModelAndView [view="member/memberDetail"; model={time=1621596692790}], org.springframework.validation.BindingResult.modelAndView=org.springframework.validation.BeanPropertyBindingResult: 0 errors, time=1621596692790, org.springframework.validation.BindingResult.next=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.loginMember=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+DEBUG:[2021-05-21 20:31:32,932] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-05-21 20:31:32,932] LoggerInterceptor.java:47 - ____________________end_____________________
