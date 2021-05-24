@@ -109,3 +109,12 @@
 0:0:0:0:0:0:0:1 - - [21/May/2021:20:29:57 +0900] "GET /spring/member/memberLogin.do HTTP/1.1" 200 2893
 0:0:0:0:0:0:0:1 - - [21/May/2021:20:31:32 +0900] "POST /spring/member/memberLogin.do HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [21/May/2021:20:31:32 +0900] "GET /spring/member/memberDetail.do HTTP/1.1" 200 5488
+127.0.0.1 - - [21/May/2021:21:18:09 +0900] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:09 +0900] "GET /spring/member/memberDetail.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:10 +0900] "GET /spring/member/memberLogin.do HTTP/1.1" 200 2943
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:12 +0900] "GET /spring HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:12 +0900] "GET /spring/ HTTP/1.1" 200 3567
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:13 +0900] "GET /spring/ HTTP/1.1" 200 3567
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:25 +0900] "GET /spring/member/memberLogin.do HTTP/1.1" 200 2613
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:27 +0900] "POST /spring/member/memberLogin.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [21/May/2021:21:18:27 +0900] "GET /spring/member/memberDetail.do HTTP/1.1" 200 5488

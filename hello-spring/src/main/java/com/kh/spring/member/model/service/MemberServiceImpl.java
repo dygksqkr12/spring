@@ -7,7 +7,7 @@ import com.kh.spring.member.model.dao.MemberDao;
 import com.kh.spring.member.model.vo.Member;
 
 @Service
-public class MemberServiceImpl implements MemberService {
+public class MemberServiceImpl implements MemberService{
 
 	@Autowired
 	private MemberDao memberDao;
@@ -21,4 +21,13 @@ public class MemberServiceImpl implements MemberService {
 	public Member selectOneMember(String id) {
 		return memberDao.selectOneMember(id);
 	}
+
+	@Override
+	public int updateMember(Member member) {
+		return memberDao.updateMember(member);
+	}
+
+	
+	
+	
 }

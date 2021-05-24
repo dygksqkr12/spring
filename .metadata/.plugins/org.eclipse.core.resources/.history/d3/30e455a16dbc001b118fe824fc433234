@@ -1,0 +1,10 @@
+package com.kh.spring.memo.model.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemoServiceImpl implements MemoService {
+
+	@Autowired
+	private MemoDao memoDao;
+}
