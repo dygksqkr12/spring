@@ -1,0 +1,15 @@
+package com.kh.spring.board.model.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.kh.spring.board.model.vo.Board;
+import com.kh.spring.memo.model.vo.Memo;
+
+public interface BoardDao {
+
+	List<Board> selectBoardList();
+
+	List<Board> selectBoardList(Map<String, Object> param);
+
+}
