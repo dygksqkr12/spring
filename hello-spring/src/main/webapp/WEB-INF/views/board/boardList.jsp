@@ -9,11 +9,23 @@
 <style>
 /*글쓰기버튼*/
 input#btn-add{float:right; margin: 0 0 15px;}
+tr[data-no]{
+	cursor: pointer;
+}
 </style>
 <script>
 function goBoardForm(){
 	location.href = "${pageContext.request.contextPath}/board/boardForm.do";
 }
+$(() => {
+	$("tr[data-no]").click(e => {
+		//화살표함수안에서는 this는 e.target이 아니다.
+		//console.log(e.target); // td태그클릭 -> 부모tr로 이벤트전파(bubbling)
+		var $tr = $(e.target).parent();
+		var no = $tr.data("no");
+		location.href = "${pageContext.request.contextPath}/board/boardDetail.do?no=" + no;
+	});
+});
 </script>
 <section id="board-container" class="container">
 	<input type="button" value="글쓰기" id="btn-add" class="btn btn-outline-success" onclick="goBoardForm();"/>
@@ -27,38 +39,24 @@ function goBoardForm(){
 			<th>조회수</th>
 		</tr>
 		<c:forEach items="${list}" var="board">
-		<tr>
+		<tr data-no="${board.no}">
 			<td>${board.no}</td>
 			<td>${board.title}</td>
 			<td>${board.memberId}</td>
-			<td><fmt:formatDate value="${board.regDate}" pattern="yyyy-MM-dd"/></td>
-			<td>            
-			  <c:if test="${board.hasAttachment}">
-              	<img src="${pageContext.request.contextPath}/resources/images/file.png" alt="file" style="height: 16px"/>
-              </c:if>
-			</td> <!-- 첨부파일 있을 경우, /resources/images/file.png 표시 width: 16px-->
+			<td><fmt:formatDate value="${board.regDate}" pattern="yy-MM-dd"/></td>
+			<td>
+				<c:if test="${board.hasAttachment}">
+				<img src="${pageContext.request.contextPath}/resources/images/file.png" width="16px" alt="" />
+				</c:if>
+			</td>
 			<td>${board.readCount}</td>
 		</tr>
 		</c:forEach>
+		
 	</table>
-	<!-- pagebar -->
-	<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+	
+	${pageBar}
+	
 </section> 
 
 <jsp:include page="/WEB-INF/views/common/footer.jsp"></jsp:include>

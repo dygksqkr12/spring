@@ -1,0 +1,7 @@
+package com.kh.spring.common.typehandler;
+
+import BaseTypeHandler;
+
+public class BooleanYnTypeHandler extends BaseTypeHandler<Boolean> {
+
+}
