@@ -25,4 +25,8 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 </qualifiedTypeNameHistroy>

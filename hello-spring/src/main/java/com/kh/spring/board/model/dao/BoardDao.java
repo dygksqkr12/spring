@@ -25,5 +25,7 @@ public interface BoardDao {
 
 	BoardExt selectOneBoardCollection(int no);
 
+	Attachment selectOneAttachment(int no);
+
 
 }
