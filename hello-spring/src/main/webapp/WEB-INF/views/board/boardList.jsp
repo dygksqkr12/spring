@@ -31,13 +31,25 @@ $(() => {
 		location.href = "${pageContext.request.contextPath}/board/boardDetail.do?no=" + no;
 	});
 
-    $( "#searchTitle" ).autocomplete({
-    	source: function(request, response){
-   		  //console.log(request);
-   		  //console.log(response);
-   		  //response([{label:'a', value:'a'}, {label:'b', value:'b'}]);
-   		  
-   		  //사용자입력값전달 ajax요청 -> success함수안에서 response호출 
+	$( "#searchTitle" ).autocomplete({
+  		source: function(request, response){
+ 		  //console.log(request);
+ 		  //console.log(response);
+ 		  //response([{label:'a', value:'a'}, {label:'b', value:'b'}]);
+ 		  
+ 		  //사용자입력값전달 ajax요청 -> success함수안에서 response호출 
+  	 	  $.ajax({
+			url: "${pageContext.request.contextPath}/board/searchTitle.do",
+			data: {
+				searchTitle: request.term
+			},
+			succss(data){
+				console.log(data);
+			},
+			error(xhr, statusText, err){
+				console.log(xhr, statusText, err);
+			}
+  	  	  });
 		},
 		select: function(event, selected){
 		 // 클릭했을때, 해당게시글 상세페이지로 이동
@@ -45,7 +57,7 @@ $(() => {
 		focus: function(event, focused){
 		 return false;
 		}
-    });
+  });
 });
 </script>
 <section id="board-container" class="container">
