@@ -1,60 +1,174 @@
-INFO :[2021-05-28 15:44:54,451] ContextLoader.java:270 - Root WebApplicationContext: initialization started
-INFO :[2021-05-28 15:44:56,540] ContextLoader.java:306 - Root WebApplicationContext initialized in 2085 ms
-INFO :[2021-05-28 15:44:56,608] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
-INFO :[2021-05-28 15:44:58,657] FrameworkServlet.java:546 - Completed initialization in 2049 ms
-DEBUG:[2021-05-28 15:45:09,402] LoggerInterceptor.java:20 - ================== start ===================
-DEBUG:[2021-05-28 15:45:09,402] LoggerInterceptor.java:21 - /spring/
-DEBUG:[2021-05-28 15:45:09,403] LoggerInterceptor.java:22 - --------------------------------------------
-INFO :[2021-05-28 15:45:09,416] HomeController.java:25 - index 페이지 요청!
-DEBUG:[2021-05-28 15:45:09,428] LoggerInterceptor.java:35 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:09,431] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
-DEBUG:[2021-05-28 15:45:09,579] LoggerInterceptor.java:45 - -------------------view---------------------
-DEBUG:[2021-05-28 15:45:09,579] LoggerInterceptor.java:47 - ____________________end_____________________
-DEBUG:[2021-05-28 15:45:09,608] LoggerInterceptor.java:20 - ================== start ===================
-DEBUG:[2021-05-28 15:45:09,608] LoggerInterceptor.java:20 - ================== start ===================
-DEBUG:[2021-05-28 15:45:09,608] LoggerInterceptor.java:21 - /spring/resources/css/style.css
-DEBUG:[2021-05-28 15:45:09,608] LoggerInterceptor.java:21 - /spring/resources/images/logo-spring.png
-DEBUG:[2021-05-28 15:45:09,609] LoggerInterceptor.java:22 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:09,609] LoggerInterceptor.java:22 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:09,618] LoggerInterceptor.java:35 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:09,618] LoggerInterceptor.java:36 - modelAndView = null
-DEBUG:[2021-05-28 15:45:09,618] LoggerInterceptor.java:45 - -------------------view---------------------
-DEBUG:[2021-05-28 15:45:09,618] LoggerInterceptor.java:47 - ____________________end_____________________
-DEBUG:[2021-05-28 15:45:09,623] LoggerInterceptor.java:35 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:09,623] LoggerInterceptor.java:36 - modelAndView = null
-DEBUG:[2021-05-28 15:45:09,623] LoggerInterceptor.java:45 - -------------------view---------------------
-DEBUG:[2021-05-28 15:45:09,623] LoggerInterceptor.java:47 - ____________________end_____________________
-DEBUG:[2021-05-28 15:45:54,710] LoggerInterceptor.java:20 - ================== start ===================
-DEBUG:[2021-05-28 15:45:54,711] LoggerInterceptor.java:21 - /spring/board/boardList.do
-DEBUG:[2021-05-28 15:45:54,711] LoggerInterceptor.java:22 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:54,744] BoardController.java:59 - cpage = 1
-DEBUG:[2021-05-28 15:45:55,308] BoardController.java:69 - totalContents = 61, url = /spring/board/boardList.do
-DEBUG:[2021-05-28 15:45:55,309] LoggerInterceptor.java:35 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:55,309] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="board/boardList"; model={list=[BoardExt(super=Board(no=61, title=ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ, memberId=honggd, content=ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ, regDate=Wed May 26 17:12:16 KST 2021, readCount=0), hasAttachment=true, attachList=null), BoardExt(super=Board(no=60, title=안녕하세요, 게시판입니다 - 60, memberId=admin, content=안녕하세, regDate=Sun Jun 10 00:00:00 KST 2018, readCount=0), hasAttachment=true, attachList=null), BoardExt(super=Board(no=59, title=안녕하세요, 게시판입니다 - 59, memberId=qwerty, content=반갑습니다, regDate=Sat Jun 09 00:00:00 KST 2018, readCount=0), hasAttachment=true, attachList=null), BoardExt(super=Board(no=58, title=안녕하세요, 게시판입니다 - 58, memberId=abcde, content=안녕하세, regDate=Fri Jun 08 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=57, title=안녕하세요, 게시판입니다 - 57, memberId=admin, content=반갑습니다, regDate=Thu Jun 07 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=56, title=안녕하세요, 게시판입니다 - 56, memberId=qwerty, content=안녕하세, regDate=Wed Jun 06 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=55, title=안녕하세요, 게시판입니다 - 55, memberId=abcde, content=반갑습니다, regDate=Tue Jun 05 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=54, title=안녕하세요, 게시판입니다 - 54, memberId=admin, content=안녕하세, regDate=Mon Jun 04 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=53, title=안녕하세요, 게시판입니다 - 53, memberId=qwerty, content=반갑습니다, regDate=Sun Jun 03 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null), BoardExt(super=Board(no=52, title=안녕하세요, 게시판입니다 - 52, memberId=abcde, content=안녕하세, regDate=Sat Jun 02 00:00:00 KST 2018, readCount=0), hasAttachment=false, attachList=null)], pageBar=<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">  <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li><li class="page-item active">
-      <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
-    </li> <li class="page-item"><a class="page-link" href="/spring/board/boardList.do?cpage=2">2</a></li> <li class="page-item"><a class="page-link" href="/spring/board/boardList.do?cpage=3">3</a></li> <li class="page-item"><a class="page-link" href="/spring/board/boardList.do?cpage=4">4</a></li> <li class="page-item"><a class="page-link" href="/spring/board/boardList.do?cpage=5">5</a></li><li class="page-item">
-      <a class="page-link" href="/spring/board/boardList.do?cpage=6" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>  </ul>
-</nav>}]
-DEBUG:[2021-05-28 15:45:56,184] LoggerInterceptor.java:45 - -------------------view---------------------
-DEBUG:[2021-05-28 15:45:56,184] LoggerInterceptor.java:47 - ____________________end_____________________
-DEBUG:[2021-05-28 15:45:56,210] LoggerInterceptor.java:20 - ================== start ===================
-DEBUG:[2021-05-28 15:45:56,211] LoggerInterceptor.java:21 - /spring/resources/images/file.png
-DEBUG:[2021-05-28 15:45:56,211] LoggerInterceptor.java:22 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:56,225] LoggerInterceptor.java:35 - --------------------------------------------
-DEBUG:[2021-05-28 15:45:56,226] LoggerInterceptor.java:36 - modelAndView = null
-DEBUG:[2021-05-28 15:45:56,261] LoggerInterceptor.java:45 - -------------------view---------------------
-DEBUG:[2021-05-28 15:45:56,262] LoggerInterceptor.java:47 - ____________________end_____________________
-WARN :[2021-05-28 15:46:00,948] DispatcherServlet.java:1248 - No mapping for GET /spring/board/searchTitle.do
-WARN :[2021-05-28 15:46:04,468] DispatcherServlet.java:1248 - No mapping for GET /spring/board/searchTitle.do
-WARN :[2021-05-28 15:46:05,041] DispatcherServlet.java:1248 - No mapping for GET /spring/board/searchTitle.do
-WARN :[2021-05-28 15:46:05,947] DispatcherServlet.java:1248 - No mapping for GET /spring/board/searchTitle.do
+INFO :[2021-06-02 00:00:06,999] ContextLoader.java:306 - Root WebApplicationContext initialized in 14055 ms
+INFO :[2021-06-02 00:00:07,379] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 00:00:23,112] FrameworkServlet.java:546 - Completed initialization in 15732 ms
+INFO :[2021-06-02 00:05:35,133] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-06-02 00:05:48,870] ContextLoader.java:306 - Root WebApplicationContext initialized in 13719 ms
+INFO :[2021-06-02 00:05:49,235] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 00:06:04,373] FrameworkServlet.java:546 - Completed initialization in 15136 ms
+INFO :[2021-06-02 00:33:42,014] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-06-02 00:33:58,240] ContextLoader.java:306 - Root WebApplicationContext initialized in 16201 ms
+INFO :[2021-06-02 00:33:58,674] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 00:34:20,232] FrameworkServlet.java:546 - Completed initialization in 21558 ms
+DEBUG:[2021-06-02 00:35:12,970] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 00:35:12,974] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-06-02 00:35:12,977] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-06-02 00:35:13,098] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-06-02 00:35:13,158] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 00:35:13,183] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-06-02 00:35:20,690] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 00:35:20,691] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 00:35:21,023] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 00:35:21,024] LoggerInterceptor.java:21 - /spring/resources/css/style.css
+DEBUG:[2021-06-02 00:35:21,025] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 00:35:21,262] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 00:35:21,262] LoggerInterceptor.java:21 - /spring/resources/images/logo-spring.png
+DEBUG:[2021-06-02 00:35:21,263] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 00:35:21,322] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 00:35:21,323] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 00:35:21,330] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 00:35:21,331] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 00:35:21,333] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 00:35:21,333] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 00:35:21,334] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 00:35:21,334] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-06-02 19:15:55,596] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-06-02 19:16:10,031] ContextLoader.java:306 - Root WebApplicationContext initialized in 14416 ms
+INFO :[2021-06-02 19:16:10,428] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 19:16:25,642] FrameworkServlet.java:546 - Completed initialization in 15213 ms
+DEBUG:[2021-06-02 19:16:26,095] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:16:26,097] LoggerInterceptor.java:21 - /spring/
+DEBUG:[2021-06-02 19:16:26,098] LoggerInterceptor.java:22 - --------------------------------------------
+INFO :[2021-06-02 19:16:26,213] HomeController.java:25 - index 페이지 요청!
+DEBUG:[2021-06-02 19:16:26,272] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:26,292] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="forward:/index.jsp"; model={}]
+DEBUG:[2021-06-02 19:16:30,510] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:16:30,513] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:16:30,778] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:16:30,779] LoggerInterceptor.java:21 - /spring/resources/css/style.css
+DEBUG:[2021-06-02 19:16:30,779] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:30,893] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:16:30,895] LoggerInterceptor.java:21 - /spring/resources/images/logo-spring.png
+DEBUG:[2021-06-02 19:16:30,895] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:30,912] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:30,913] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 19:16:30,914] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:16:30,915] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:16:30,916] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:30,917] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 19:16:30,920] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:16:30,921] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:16:37,121] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:16:37,122] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:16:37,122] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:37,127] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:16:37,127] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:16:38,218] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:16:38,218] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:19:25,950] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:19:25,950] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:19:25,952] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:19:25,954] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:19:25,955] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:19:27,503] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:19:27,507] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:20:59,545] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:20:59,547] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:20:59,550] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:20:59,551] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:20:59,552] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:21:00,932] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:21:00,944] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:22:40,697] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:22:40,698] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:22:40,699] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:22:40,701] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:22:40,702] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:22:41,872] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:22:41,873] LoggerInterceptor.java:47 - ____________________end_____________________
+WARN :[2021-06-02 19:23:59,595] DispatcherServlet.java:1248 - No mapping for GET /spring/menus
+DEBUG:[2021-06-02 19:32:52,832] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:32:52,832] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:32:52,834] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:32:52,836] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:32:52,837] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:32:54,326] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:32:54,327] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:35:51,230] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:35:51,231] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:35:51,232] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:35:51,233] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:35:51,234] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:35:51,284] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:35:51,286] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:46:24,748] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:46:24,749] LoggerInterceptor.java:21 - /spring/resources/images/logo-spring.png
+DEBUG:[2021-06-02 19:46:24,750] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:46:24,993] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:46:24,994] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 19:46:24,995] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:46:24,996] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 19:53:09,531] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 19:53:09,533] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 19:53:09,533] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 19:53:09,534] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 19:53:09,535] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 19:53:10,923] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 19:53:10,924] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:06:28,108] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:06:28,110] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:06:28,111] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:06:28,113] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:06:28,114] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:06:28,195] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:06:28,196] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:09:09,566] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:09:09,567] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:09:09,568] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:09:09,569] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:09:09,570] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:09:09,639] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:09:09,641] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:10:13,790] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:10:13,791] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:10:13,793] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:10:13,795] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:10:13,796] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:10:13,935] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:10:13,937] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:12:38,765] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:12:38,766] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:12:38,767] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:12:38,769] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:12:38,770] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:12:40,063] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:12:40,063] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:12:55,565] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:12:55,566] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:12:55,566] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:12:55,567] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:12:55,568] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:12:55,619] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:12:55,623] LoggerInterceptor.java:47 - ____________________end_____________________
+INFO :[2021-06-02 20:28:54,268] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-06-02 20:29:07,893] ContextLoader.java:306 - Root WebApplicationContext initialized in 13609 ms
+INFO :[2021-06-02 20:29:08,393] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 20:29:27,483] FrameworkServlet.java:546 - Completed initialization in 19090 ms
+INFO :[2021-06-02 20:30:47,601] ContextLoader.java:270 - Root WebApplicationContext: initialization started
+INFO :[2021-06-02 20:31:00,817] ContextLoader.java:306 - Root WebApplicationContext initialized in 13198 ms
+INFO :[2021-06-02 20:31:01,277] FrameworkServlet.java:524 - Initializing Servlet 'appServlet'
+INFO :[2021-06-02 20:31:16,294] FrameworkServlet.java:546 - Completed initialization in 15014 ms
+DEBUG:[2021-06-02 20:31:24,662] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:31:24,664] LoggerInterceptor.java:21 - /spring/menu/menu.do
+DEBUG:[2021-06-02 20:31:24,665] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:31:24,770] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:31:24,788] LoggerInterceptor.java:36 - modelAndView = ModelAndView [view="menu/menu"; model={}]
+DEBUG:[2021-06-02 20:31:28,794] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:31:28,795] LoggerInterceptor.java:47 - ____________________end_____________________
+DEBUG:[2021-06-02 20:31:31,582] LoggerInterceptor.java:20 - ================== start ===================
+DEBUG:[2021-06-02 20:31:31,584] LoggerInterceptor.java:21 - /spring/menu/selectMenuList.do
+DEBUG:[2021-06-02 20:31:31,585] LoggerInterceptor.java:22 - --------------------------------------------
+DEBUG:[2021-06-02 20:31:31,631] MenuController.java:49 - 응답 json = [{"id":18,"restaurant":"스타동","name":"사케동","price":8400,"type":"jp","taste":"mild"},{"id":17,"restaurant":"대우부대찌게","name":"청국장","price":13000,"type":"kr","taste":"mild"},{"id":16,"restaurant":"산들애","name":"딸기","price":500,"type":"kr","taste":"hot"},{"id":15,"restaurant":"대우부대찌게","name":"부대찌게","price":10000,"type":"kr","taste":"hot"},{"id":14,"restaurant":"봉된장","name":"열무비빔밥+우렁된장","price":7000,"type":"kr","taste":"hot"},{"id":13,"restaurant":"대우부대찌게","name":"부대지게","price":10000,"type":"kr","taste":"hot"},{"id":12,"restaurant":"백운봉","name":"막국수","price":9000,"type":"kr","taste":"hot"},{"id":11,"restaurant":"진가와","name":"자루소바","price":9000,"type":"jp","taste":"mild"},{"id":10,"restaurant":"진가와","name":"자루소면","price":8000,"type":"jp","taste":"mild"},{"id":9,"restaurant":"김남완초밥집","name":"참치도로초밥","price":33000,"type":"jp","taste":"mild"},{"id":8,"restaurant":"김남완초밥집","name":"런치초밥","price":10000,"type":"jp","taste":"mild"},{"id":7,"restaurant":"김남완초밥집","name":"완초밥","price":13000,"type":"jp","taste":"mild"},{"id":6,"restaurant":"짬뽕지존","name":"짬뽕","price":9000,"type":"ch","taste":"mild"},{"id":5,"restaurant":"만리향","name":"짬뽕","price":6000,"type":"ch","taste":"hot"},{"id":4,"restaurant":"만리향","name":"간짜장","price":5000,"type":"ch","taste":"mild"},{"id":3,"restaurant":"장터","name":"뚝배기 김치찌게","price":7000,"type":"kr","taste":"hot"},{"id":2,"restaurant":"두리순대국","name":"순대국","price":7000,"type":"kr","taste":"hot"},{"id":1,"restaurant":"두리순대국","name":"순대국","price":7000,"type":"kr","taste":"mild"}]
+DEBUG:[2021-06-02 20:31:31,854] LoggerInterceptor.java:35 - --------------------------------------------
+DEBUG:[2021-06-02 20:31:31,855] LoggerInterceptor.java:36 - modelAndView = null
+DEBUG:[2021-06-02 20:31:31,856] LoggerInterceptor.java:45 - -------------------view---------------------
+DEBUG:[2021-06-02 20:31:31,857] LoggerInterceptor.java:47 - ____________________end_____________________

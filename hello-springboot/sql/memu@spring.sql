@@ -8,7 +8,7 @@ create table menu (
     constraint pk_menu primary key(id),
     constraint uq_menu unique (restaurant, name, taste) -- 두리순대국 순대국 mild, 두리순대국 순대국 hot
 );
-
+--drop table menu;
 create sequence seq_menu_id;
 
 insert into spring.menu (id,restaurant,name,price,type,taste) values (seq_menu_id.nextval,'두리순대국','순대국',7000,'kr','mild');

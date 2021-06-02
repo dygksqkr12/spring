@@ -21,7 +21,7 @@ create table dev(
     constraint pk_dev_no primary key(no),
     constraint ck_dev_gender check(gender in ('M', 'F'))
 );
-
+--drop table dev;
 create sequence seq_dev_no;
 
 select
