@@ -38,5 +38,8 @@ public class DemoDaoImpl implements DemoDao {
 	public int deleteDev(int no) {
 		return session.delete("demo.deleteDev", no);
 	}
+	
+	
+	
 
 }

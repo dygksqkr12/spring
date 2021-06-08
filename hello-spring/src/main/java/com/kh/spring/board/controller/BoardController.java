@@ -140,13 +140,15 @@ public class BoardController {
 	@GetMapping("/boardDetail.do")
 	public void selectOneBoard(@RequestParam int no, Model model) {
 		//1. 업무로직 : board - attachment 
-//		BoardExt board = boardService.selectOneBoard(no); //심플하게 처리
 		BoardExt board = boardService.selectOneBoardCollection(no);
 		log.debug("board = {}", board);
 		
 		//2. jsp에 위임
 		model.addAttribute("board", board);
 	}
+	
+	
+	
 	/**
 	 * ResponseEntity
 	 * 1. status code 커스터마이징
@@ -227,5 +229,23 @@ public class BoardController {
 		}
 		return resource;
 	}
+	
+	@GetMapping("/searchTitle.do")
+	@ResponseBody
+	public Map<String, Object> searchTitle(@RequestParam String searchTitle){
+		log.debug("searchTitle = {}", searchTitle);
+		
+		//1. 업무로직 : 검색어로 board 조회
+		List<Board> list = boardService.searchTitle(searchTitle);
+		log.debug("list = {}", list);
+
+		//2. map에 검색결과 담아서 전송
+		Map<String, Object> map = new HashMap<>();
+		map.put("list", list);
+		map.put("searchTitle", searchTitle);
+		return map;
+	}
+	
+	
 	
 }

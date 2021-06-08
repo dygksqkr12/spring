@@ -28,7 +28,7 @@
 		<th scope="col">개발언어</th>
 		<td>
 			<c:forEach items="${dev.lang}" var="lang" varStatus="vs">
-			${lang}${vs.last ? "" : ","}			
+			${lang}${vs.last ? "" : ","}
 			</c:forEach>
 		</td>
 	</tr>

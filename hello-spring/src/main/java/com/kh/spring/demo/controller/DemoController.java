@@ -25,7 +25,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.kh.spring.demo.model.service.DemoService;
 import com.kh.spring.demo.model.validator.DevValidator;
+import com.kh.spring.demo.model.validator.MusicianValidator;
 import com.kh.spring.demo.model.vo.Dev;
+import com.kh.spring.demo.model.vo.Musician;
 
 /**
  * 사용자 요청 하나당 이를 처리하는 Controller 메소드(Handler)가 하나씩 존재한다.
@@ -54,7 +56,7 @@ import com.kh.spring.demo.model.vo.Dev;
  * @ModelAttribute : model속성에 대한 getter
  * @SessionAttribute : session속성에 대한 getter
  * SessionStatus: @SessionAttributes로 등록된 속성에 대하여 사용완료(complete)처리
-
+ * 
  * Command객체 : http요청 파라미터를 커맨드객체에 저장한 VO객체
  * @Valid 커맨드객체 유효성 검사용
  * Error, BindingResult : Command객체에 저장결과, Command객체 바로 다음위치시킬것.
@@ -112,11 +114,12 @@ public class DemoController {
 		return "demo/devResult";
 	}
 	
+	
 	/**
-	 * name값과 일치하는 매개변수에 전달
-	 * 1. name값(userName)이 매개변수(name)와 일치하지 않는다면, value="userName" 지정
+	 * name값과 일치하는 매개변수에 전달.
+	 * 1. name값(userName)이 매개변수(name)와 일치하지 않는다면, name="userName" 지정  
 	 * (name속성값이 매개변수명보다 우선순위 높음)
-	 * 2.required="true"(기본값) 사용자 선택적으로 입력하는 필드는 false로 명시할 것.
+	 * 2. required="true"(기본값) 사용자가 선택적으로 입력하는 필드는 false로 명시할 것.
 	 * 3. defaultValue를 지정한 경우, 값이 없거나, 형변환 오류가 발생해도 기본값으로 정상처리된다.
 	 * 
 	 * 
@@ -130,29 +133,30 @@ public class DemoController {
 	 */
 	@RequestMapping("/dev2.do")
 	public String dev2(
-//			@RequestParam(name = "userName") String name,
-			@RequestParam String name,
+			@RequestParam(name = "name") String name,
 			@RequestParam(defaultValue = "1") int career,
 			@RequestParam String email,
 			@RequestParam String gender,
 			@RequestParam(required = false) String[] lang,
 			Model model
-			) {
+		) {
 		Dev dev = new Dev(0, name, career, email, gender, lang);
 		log.info("dev = {}", dev);
 		
 		//jsp에 위임
-		model.addAttribute("dev", dev); //jsp에서 scope="request"에 저장되어 있음.
+		model.addAttribute("dev", dev); // jsp에서 scope="request"에 저장되어 있음.
 		
 		return "demo/devResult";
 	}
 	
+	
 	/**
-	 * 매개변수 Dev객체를 command(커맨드)객체라 한다.
+	 * 매개변수 Dev객체를  command커맨드객체라 한다.
 	 * @ModelAttribute 모델에 등록된 속성을 가져오는 애노테이션.
 	 * Dev객체는 handler도착전에 model에 등록되어 있다.
 	 * 
-	 * 커맨드객체 앞 @ModelAttribute는 생략이 가능하다.
+	 * 커맨드객체 앞 @ModelAttribute 는 생략이 가능하다.
+	 * 
 	 * 
 	 * @param dev
 	 * @return
@@ -163,6 +167,7 @@ public class DemoController {
 		
 		return "demo/devResult";
 	}
+	
 	
 	@RequestMapping(value = "/dev4.do", method = RequestMethod.POST)
 	public String dev4(@Valid Dev dev, BindingResult bindingResult) {
@@ -179,14 +184,27 @@ public class DemoController {
 		return "demo/devResult";
 	}
 	
+	@Autowired DevValidator devValidator;
+	@Autowired MusicianValidator musicianValidator;
+	
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
-		binder.setValidator(new DevValidator());
+//		binder.setValidator(new DevValidator());
+//		binder.addValidators(new DevValidator(), new MusicianValidator());
+		binder.addValidators(devValidator, musicianValidator);
 	}
 	
+	/**
+	 * RedirectAttributes
+	 * 
+	 * @param dev
+	 * @param redirectAttr
+	 * @return
+	 */
 	@RequestMapping(value = "/insertDev.do", method = RequestMethod.POST)
-	public String insertDev(@ModelAttribute Dev dev, RedirectAttributes redirectAttr) {
+	public String insertDev(Dev dev, Musician musician, RedirectAttributes redirectAttr) {
 		log.info("dev = {}", dev);
+		log.info("musician = {}", musician);
 		
 		try {
 			//1. 업무로직
@@ -194,8 +212,8 @@ public class DemoController {
 			
 			//2. 사용자 피드백 & 리다이렉트
 			redirectAttr.addFlashAttribute("msg", "dev 등록 성공!");
-		} catch(Exception e) {
-			log.error("dev 등록 오류!", e); // 에러로그
+		} catch(Exception  e) {
+			log.error("dev 등록 오류!", e); // 에러 로그
 			throw e;
 		}
 		
@@ -203,14 +221,13 @@ public class DemoController {
 	}
 	
 	@RequestMapping(value = "/devList.do", method = RequestMethod.GET)
-	public String devList(Model model) {
+	public String devvvvvvvvvvvvvvvvvList(Model model) {
 		//1. 업무로직
 		List<Dev> list = demoService.selectDevList();
 		log.info("list = {}", list);
 		log.info("1234567890");
 		//2. jsp위임
 		model.addAttribute("list", list);
-		
 		return "demo/devList";
 	}
 	
@@ -266,6 +283,7 @@ public class DemoController {
 	}
 	
 }
+
 
 
 

@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 
 //@Getter
 //@Setter
+//@NoArgsConstructor
+//@AllArgsConstructor
 //@ToString
 @Data
 @NoArgsConstructor
@@ -24,5 +26,6 @@ public class Member {
 	private String address;
 	private String[] hobby;
 	private Date enrollDate;
-	private boolean enabled; // 회원활성화여부 true(1), false(0)
+	private boolean enabled;	// 회원활성화여부 true(1), false(0)
+	
 }

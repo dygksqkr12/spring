@@ -2,6 +2,7 @@ package com.kh.spring.demo.model.validator;
 
 import java.util.regex.Pattern;
 
+import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
@@ -10,19 +11,20 @@ import com.kh.spring.demo.model.vo.Dev;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Component
 public class DevValidator implements Validator {
 
 	/**
-	 * 검사하고자하는 객체가 Dev타입일때만 유효성 검사 지원
+	 * 검사하고하는 하는 객체가 Dev타입일때만 유효성 검사 지원
 	 */
 	@Override
 	public boolean supports(Class<?> clazz) {
-		return Dev.class.isAssignableFrom(clazz);
+		return Dev.class.equals(clazz);
 	}
 
 	/**
 	 * 필드별로 유효성 검사를 실시.
-	 * 부적합한 값의 경우, Errors객체에 해당 오류사실을 저장.
+	 * 부적합한 값이 경우, Errors객체에 해당 오류사실을 저장.
 	 */
 	@Override
 	public void validate(Object target, Errors errors) {

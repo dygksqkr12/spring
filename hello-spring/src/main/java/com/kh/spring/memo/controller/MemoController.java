@@ -26,7 +26,7 @@ public class MemoController {
 	@GetMapping("/memo.do")
 	public ModelAndView selectMemoList(ModelAndView mav) {
 		log.debug("memoService = {}", memoService.getClass());
-		//MemoServiceImpl
+		// MemoServiceImpl
 		
 		//1. 업무로직 : memo목록 조회
 		List<Memo> list = memoService.selectMemoList();

@@ -75,7 +75,7 @@
 			board_no = #{boardNo}
 	</select>
 	<resultMap type="attachment" id="attachVoMap">
-		<result column="status" property="status" typeHandler="booleanYnTypeHandler"/>
+		<result column="status" property="status" javaType="_boolean" jdbcType="CHAR"/>
 	</resultMap>
 	<select id="selectOneBoardCollection" resultMap="boardCollectionMap">
 		select 
@@ -117,8 +117,22 @@
 			*
 		from
 			attachment
-		where
+		where 
 			no = #{no}
 	</select>
+	
+	<select id="searchTitle" resultType="board">
+		select 
+			*
+		from 
+			board
+		where
+			title like '%' || #{searchTitle} || '%'
+	</select>
 </mapper>
+
+
+
+
+
 

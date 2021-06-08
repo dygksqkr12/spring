@@ -9,7 +9,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class LoggerInterceptor extends HandlerInterceptorAdapter {
+public class LoggerInterceptor extends HandlerInterceptorAdapter{
 
 	/**
 	 * Handler 호출전
@@ -17,11 +17,12 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		log.debug("================== start ===================");
+		log.debug("================== start ==================");
 		log.debug(request.getRequestURI());
-		log.debug("--------------------------------------------");
+		log.debug("-------------------------------------------");
 		
-		return super.preHandle(request, response, handler); //true를 리턴
+		
+		return super.preHandle(request, response, handler); // true를 리턴
 	}
 
 	/**
@@ -32,9 +33,12 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
 		super.postHandle(request, response, handler, modelAndView);
-		log.debug("--------------------------------------------");
+		log.debug("-------------------------------------------");
 		log.debug("modelAndView = {}", modelAndView);
+		
 	}
+	
+	
 
 	/**
 	 * view단(jsp) 작업이후
@@ -42,9 +46,10 @@ public class LoggerInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		log.debug("-------------------view---------------------");
+		log.debug("------------------- view ---------------------");
 		super.afterCompletion(request, response, handler, ex);
-		log.debug("____________________end_____________________");
+		log.debug("____________________ end _____________________\n");
+		
 	}
 
 	

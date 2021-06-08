@@ -11,13 +11,13 @@ public class FooProxy implements Foo {
 	@Override
 	public void sayHello() {
 		//보조업무로직 before
-		System.out.println("--------------------before--------------------");
+		System.out.println("--------------before------------------");
 		
-		//주업무로직 실행
+		// 주업무로직 실행
 		this.foo.sayHello();
 		
 		//보조업무로직 after
-		System.out.println("---------------------end---------------------");		
+		System.out.println("----------------end----------------");
 	}
 
 	@Override

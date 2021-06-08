@@ -5,7 +5,7 @@ public class AopTest {
 	Foo foo = new FooProxy(new FooImpl());
 	
 	public static void main(String[] args) {
-
+		
 //		new AopTest().fooTest();
 		new AopTest().fooNameTest();
 		

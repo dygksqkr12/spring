@@ -56,13 +56,14 @@
 		<constructor-arg index="0" ref="sqlSessionFactoryBean"/>
 	</bean>		
 	
+	
 	<!-- #13.1. 트랜잭션 처리를 위한 트랜잭션매니저 설정해야 한다. -->
 	<bean 
 		id="transactionManager" 
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-	<!-- 13.2 @Transactional 어노테이션 처리 -->
+	<!-- #13.2 @Transactional 어노테이션 처리 -->
 	<!-- <tx:annotation-driven transaction-manager="transactionManager"/> -->
 	
 	<!-- #13.2 선언적 xml방식의 트랜잭션처리 -->
@@ -80,4 +81,5 @@
 		<!-- advisor는 단하나의 pointcut, 단하나의 advice를 그룹핑한 것 -->
 		<aop:advisor id="transactionAdvisor" advice-ref="txAdvice" pointcut-ref="serviceMethod"/>
 	</aop:config>
+	
 </beans>

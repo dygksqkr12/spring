@@ -8,7 +8,7 @@
 		<param name="Target" value="System.out" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<!-- <param name="ConversionPattern" value="%-5p: %c - %m%n" /> -->
-			<param name="ConversionPattern" value="%-5p:%-90l - %m%n" />
+			<param name="ConversionPattern" value="%-5p:%-100l | %m%n" />
 		</layout>
 	</appender>
 	
@@ -45,16 +45,16 @@
 		* %X : 로깅이 발생한 thread와 관련된 MDC(mapped diagnostic context)를 출력합니다. %X{key} 형태.
 		
 	 -->
-	
-    <!-- #10.2.log4jdbc-remix 로그 출력 appender 추가 -->
+	 
+	<!-- #10.2.log4jdbc-remix 로그 출력 appender 추가 -->
 	<appender name="sqlLogger" class="org.apache.log4j.ConsoleAppender">
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%-5p: %m%n" />
 		</layout>
 	</appender>
-	
+
     <!-- #10.3.log4jdbc-remix 관련 logger 시작 -->
-    <!-- additivity : 부모logger 전파여부. 기본값  true -->
+    <!-- additivity : 부모logger전파여부. 기본값 true -->
 	<!-- Query Loggers  -->
 	<logger name="jdbc.sqlonly" additivity="false">
 		<level value="INFO" />
@@ -64,6 +64,7 @@
 		<level value="INFO" />
 		<appender-ref ref="sqlLogger"/>
 	</logger>
+	 
 	
 	<!-- loggin message 수집용 -->
 	<!-- Application Loggers -->

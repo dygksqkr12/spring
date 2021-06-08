@@ -21,16 +21,17 @@
 		)
 		<!-- enroll_date, enabled컬럼은 기본값처리 -->
 	</insert>
+	
 	<select id="selectOneMember" resultMap="memberVoMap">
 		select
 			*
-		from
+		from 
 			member
-		where
+		where 
 			id = #{id}
 	</select>
 	<resultMap type="member" id="memberVoMap">
-		<result column="hobby" property="hobby" typeHandler="stringArrayTypeHandler"></result>
+		<result column="hobby" property="hobby" typeHandler="stringArrayTypeHandler"/>
 	</resultMap>
 	<update id="updateMember">
 		update 
@@ -46,5 +47,4 @@
 		where
 			id = #{id}	
 	</update>
-
 </mapper>

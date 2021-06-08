@@ -287,7 +287,7 @@ public class MemberController {
 		
 		return map;
 	}
-	
+
 	@GetMapping("/checkIdDuplicate3.do")
 	public ResponseEntity<Map<String, Object>> checkIdDuplicate3(@RequestParam String id) {
 		//1. 업무로직
@@ -304,7 +304,10 @@ public class MemberController {
 				.body(map);
 	}
 	
+	
+	
 }
+
 
 
 

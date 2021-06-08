@@ -29,8 +29,8 @@ $(() => {
 		//파일명 가져오기
 		var file = $(e.target).prop('files')[0];
 		console.log(file);
-		var $label = $(e.target).next();
-
+		var $label  = $(e.target).next();
+		
 		//label 적용
 		$label.html(file ? file.name : "파일을 선택하세요.");
 		
@@ -42,8 +42,8 @@ $(() => {
 	<form 
 		name="boardFrm" 
 		action="${pageContext.request.contextPath}/board/boardEnroll.do" 
-		method="post" 
-		enctype="multipart/form-data"
+		method="post"
+		enctype="multipart/form-data" 
 		onsubmit="return boardValidate();">
 		<input type="text" class="form-control" placeholder="제목" name="title" id="title" required>
 		<input type="text" class="form-control" name="memberId" value="${loginMember.id}" readonly required>
@@ -53,7 +53,7 @@ $(() => {
 		    <span class="input-group-text">첨부파일1</span>
 		  </div>
 		  <div class="custom-file">
-		    <input type="file" class="custom-file-input" name="upFile" id="upFile1" multiple />
+		    <input type="file" class="custom-file-input" name="upFile" id="upFile1"  multiple />
 		    <label class="custom-file-label" for="upFile1">파일을 선택하세요</label>
 		  </div>
 		</div>
@@ -62,11 +62,10 @@ $(() => {
 		    <span class="input-group-text">첨부파일2</span>
 		  </div>
 		  <div class="custom-file">
-		    <input type="file" class="custom-file-input" name="upFile" id="upFile2" />
+		    <input type="file" class="custom-file-input" name="upFile" id="upFile2" >
 		    <label class="custom-file-label" for="upFile2">파일을 선택하세요</label>
 		  </div>
 		</div>
-		
 	    <textarea class="form-control" name="content" placeholder="내용" required></textarea>
 		<br />
 		<input type="submit" class="btn btn-outline-success" value="저장" >

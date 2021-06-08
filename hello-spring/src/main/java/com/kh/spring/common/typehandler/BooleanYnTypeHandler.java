@@ -10,7 +10,7 @@ import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
 import org.apache.ibatis.type.MappedTypes;
 
-@MappedTypes(Boolean.class)
+@MappedTypes(boolean.class)
 @MappedJdbcTypes(JdbcType.CHAR)
 public class BooleanYnTypeHandler extends BaseTypeHandler<Boolean> {
 

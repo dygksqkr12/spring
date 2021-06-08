@@ -3,7 +3,7 @@ package com.kh.spring.log;
 import org.apache.log4j.Logger;
 
 /**
- * Logging
+ * Logging 
  * - 콘솔로그: System.out.printxx 보다 효율적인 로그관리가 가능.
  * - 파일로그
  * 
@@ -17,13 +17,12 @@ import org.apache.log4j.Logger;
  * - trace : 개발용. debug의 범위를 한정해서 로깅할때.
  * 
  * Slf4j(스프링이 제공하는 로깅 추상체) 없이 순수하게 Log4j프레임워크만 테스트
- *
  */
 public class Log4jTest {
 	
 	// org.apache.log4j.Logger
 	private static final Logger log = Logger.getLogger(Log4jTest.class);
-
+	
 	public static void main(String[] args) {
 		log.fatal("fatal");
 		log.error("error");
